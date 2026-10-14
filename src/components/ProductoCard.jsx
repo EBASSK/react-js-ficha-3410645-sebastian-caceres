@@ -5,7 +5,7 @@ function ProductoCard({ producto }) {
         <article className="producto-card">
             <h2>{producto.nombre}</h2>
             <p>Categoría: {producto.categoria}</p>
-            <p>Precio: ${producto.precio}</p>
+            <p>Precio: ${producto.precio.toLocaleString('es-CO')}</p>
             <p>stock: {producto.stock}</p>
             <strong>{estado}</strong>
         </article>

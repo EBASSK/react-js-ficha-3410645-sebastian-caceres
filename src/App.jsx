@@ -15,7 +15,7 @@ function App() {
       <h1>Tienda tecnológica</h1>
       <p>Productos disponibles: {disponibles.length}</p>
       <p>¿Hay productos agotados? {hayAgotados ? 'Sí' : 'No'}</p>
-      <p>Valor del inventario: ${valorInventario}</p>
+      <p>Valor del inventario: ${valorInventario.toLocaleString('es-CO')}</p>
 
       <h2>Todos los productos</h2>
       <section className="productos">
